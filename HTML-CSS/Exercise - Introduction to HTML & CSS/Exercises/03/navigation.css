@@ -1,0 +1,8 @@
+li {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}

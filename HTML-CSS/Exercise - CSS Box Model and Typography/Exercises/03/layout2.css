@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    border: 2px solid rgb(0, 109, 7);
+    padding: 20px 0;
+}
+
+section {
+    border: 2px solid black;
+    margin: 20px;
+}
+.header p {
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 30px;
+}
+
+.main p {
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 30px;
+}
+
+.footer p {
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 30px;
+}

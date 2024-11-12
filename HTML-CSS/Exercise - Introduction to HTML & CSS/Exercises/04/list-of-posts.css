@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+time {
+    font-style: italic;
+    color: gray;
+}
+
+span {
+    font-weight: bold;
+    color: #444;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}

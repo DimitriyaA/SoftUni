@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        /* Styling for image gallery */
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 150px;
+            height: 250px;
+            height: auto;
+        }
+
+        /* Styling for images placed next to each other */
+        .inline-images {
+            display: flex;
+            gap: 10px;
+        }
+
+        .inline-images img {
+            width: 150px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Images</h1>
+    <p>The img element embeds an image into the document.</p>
+    
+    <!-- First Image -->
+    <img src="https://i.pinimg.com/736x/01/59/96/015996caf059b449cbae785d19dbb7b5.jpg" alt="Lighthouse image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- Second Image -->
+    <img src="https://i.pinimg.com/736x/90/75/e7/9075e751d5c218e37916f83c27539546.jpg" alt="Typewriter image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- Images next to each other -->
+    <h2>Images next to each other</h2>
+    <div class="inline-images">
+        <img src="https://i.pinimg.com/236x/f5/4a/3a/f54a3af8eb906282918188ecba741a98.jpg" alt="Flowers 1">
+        <img src="https://i.pinimg.com/originals/cd/fd/c9/cdfdc98067c84af4846d066ddba2fbd0.jpg" alt="Roses">
+        <img src="https://i.pinimg.com/736x/a3/d6/c7/a3d6c7f4e45acf38f7a054d154a6be15.jpg" alt="Pink Flowers">
+        <img src="https://wallpapers.com/images/hd/pinterest-pictures-by0m4nnbsicjiano.jpg" alt="Rainbow Roses">
+    </div>
+
+    <!-- Image Gallery (List of images) -->
+    <h2>Image Gallery (List of images)</h2>
+    <ul>
+        <li><img src="https://i.pinimg.com/564x/93/2d/f8/932df855536334591529e479e69cc2b6.jpg" alt="Flowers 2"></li>
+        <li><img src="https://i.pinimg.com/736x/d6/86/00/d686006cd73a4402eaa5ccf42eb070d9.jpg" alt="Red Roses"></li>
+        <li><img src="https://i.pinimg.com/736x/10/7a/80/107a80c677ef2139a82bf325e28411ff.jpg" alt="Pink Flowers 2"></li>
+        <li><img src="https://i.pinimg.com/736x/3c/73/94/3c73941ad2c071443bb53668be01ef4f.jpg" alt="Colorful Roses"></li>
+    </ul>
+</body>
+</html>

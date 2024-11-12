@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kodemono/v2/A2BYn5pb0QgtVEPFnlYOk4Lwa5I.woff2) format('woff2');
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #c8c7c7;
+  }
+  
+  .form-container {
+      background-color: #273745;
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+  
+  .form-header button {
+      flex: 1;
+      padding: 10px 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .active-tab {
+      background-color: #31c48d;
+      color: white;
+  }
+  
+  .form-header button:not(.active-tab) {
+      background-color: #505a67;
+      color: #d3d3d3;
+  }
+  
+  .form-header button:not(.active-tab):hover {
+      background-color: #29a578;
+      color: white;
+  }
+  
+  h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+      padding: 10px;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .name-fields {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      position: relative;
+  }
+  
+  .name-fields input {
+      width: 165px;
+      padding: 5px;
+      background-color: #273745;
+      border: none;
+      color: white;
+      font-size: 14px;
+      border-radius: 2px;
+      margin-bottom: 5px;
+      border: 1px solid grey;
+  }
+  
+  input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      background-color: #273745;
+      border: none;
+      color: white;
+      font-size: 14px;
+      border-radius: 2px;
+      margin-bottom: 5px;
+      border: 1px solid grey;
+  }
+  
+  input::placeholder {
+      color: #8a9ba8;
+      background-color: #273745;
+  }
+  
+  .submit-btn {
+      padding: 10px;
+      background-color: #31c48d;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+  
+  span {
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  .first {
+      position: relative;
+      right: 72px;
+      color: #31c48d;
+      top: 7px;
+  }
+  
+  .second {
+      position: relative;
+      right: 81px;
+      color: #31c48d;
+      top: 7px;
+  }
+  
+  .third {
+      position: relative;
+      right: -118px;
+      top: -26px;
+      color: #31c48d;
+  }
+  
+  .fourth {
+      position: relative;
+      right: -126px;
+      top: -26px;
+      color: #31c48d;
+  }
+  

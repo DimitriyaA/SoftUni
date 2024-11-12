@@ -1,0 +1,43 @@
+.css-box-model{
+    width: 50vw;
+    margin: 50px auto;
+}
+
+.css-box-model div {
+    border: 1px dashed rgb(79, 77, 77);
+    margin: 10px 20px 20px 20px;
+}
+
+.css-box-model div::before {
+    padding-left: 20px;
+    display: block;
+}
+
+.css-box-model .margin {
+    background: rgb(255 150 111);
+}
+
+.css-box-model .margin::before{
+    content: 'margin';
+}
+
+.css-box-model .border {
+    background: rgb(255 232 198);
+}
+
+.css-box-model .border::before {
+    content: 'border';
+}
+
+.css-box-model .padding {
+    background: rgb(133 235 133);
+}
+
+.css-box-model .padding::before {
+    content: 'padding';
+}
+
+.css-box-model .content {
+    background: rgb(163 210 226);
+    text-align: center;
+}

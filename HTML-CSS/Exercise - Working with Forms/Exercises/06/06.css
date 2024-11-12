@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.radio-group, .checkbox-group {
+    margin-bottom: 20px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.radio input[type="radio"]:checked + .custom-radio {
+    background-color: #ffb000;
+}
+
+.radio input[type="radio"]:checked + .custom-radio::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: rgb(188, 109, 6);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.switch input[type="checkbox"] {
+    display: none;
+}
+
+.slider {
+    width: 40px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.slider::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: rgb(192, 120, 6);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]:checked + .slider {
+    background-color: #ffb006;
+}
+
+input[type="checkbox"]:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+label {
+    font-size: 16px;
+    cursor: pointer;
+}

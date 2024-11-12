@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    width: 300px;
+    padding: 1em;
+    border: 2px solid blue;
+    align-items: flex-start;
+    }
+    
+    .flex-item {
+        border: 2px solid black;
+        padding: 20px;
+        background: #eee;
+        flex-shrink: 1; /* Default behavior */
+        flex-basis: 300px;
+    }
+    
+   /* Flex-shrink: 0 for all items */
+.flex-shrink-zero .flex-item {
+    flex-shrink: 0;
+}
+
+/* Flex-shrink: 0 for the second item only */
+.flex-shrink-2nd-only .flex-item:nth-child(1) {
+    flex-shrink: 0
+}
+
+.flex-shrink-2nd-only .flex-item:nth-child(3) {
+    flex-shrink: 0
+}
