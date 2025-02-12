@@ -4,7 +4,7 @@ import {
     AUTH_COOKIE_NAME
 } from '../config.js';
 
-export const auth = async (req, res, next) => {
+const auth = async (req, res, next) => {
     const token = req.cookies[AUTH_COOKIE_NAME];
 
     if (!token) {
@@ -23,7 +23,7 @@ export const auth = async (req, res, next) => {
     }
 }
 
-export const isAuth = (req, res, next) => {
+const isAuth = (req, res, next) => {
     if (!req.user) {
         return res.redirect('/auth/login');
     };
@@ -52,26 +52,19 @@ export const isAuth = (req, res, next) => {
     };
 
 };
+*/
 
-const isAuth = (req, res, next) => {
-    if (!req.isAuthenticated) {
-        return res.redirect('/auth/login');
-    };
-
-    return next();
-};
 
 const isGuest = (req, res, next) => {
-    if (!req.isAuthenticated) {
-        return next();
+    if (req.user) {
+        res.setError('You are already logged in!');
+        return res.redirect('/')
     }
-
-    return res.render('home', { error: 'You are already registered and logged!' });
+    next();
 }
 
 export {
-    authMiddleware,
+    auth,
     isAuth,
     isGuest
 };
-*/
