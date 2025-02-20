@@ -1,0 +1,31 @@
+<section id="create-container">
+    <div class="create-container-info">
+        <h1>Edit Event</h1>
+        <form action="#" method="POST">
+            <label>Name of the Disaster:</label>
+            <input type="text" id="name" name="name" placeholder="..." value="{{disaster.name}}">
+            <label>Type of Disaster:</label>
+            <select id="type" name="type" value="{{disaster.type}}">
+                <option value="Wildfire" {{#if (isTypeSelected "Wildfire" disaster.type)}}selected{{/if}}>Wildfire
+                </option>
+                <option value="Flood" {{#if (isTypeSelected "Flood" disaster.type)}}selected{{/if}}>Flood</option>
+                <option value="Earthquake" {{#if (isTypeSelected "Earthquake" disaster.type)}}selected{{/if}}>Earthquake
+                </option>
+                <option value="Hurricane" {{#if (isTypeSelected "Hurricane" disaster.type)}}selected{{/if}}>Hurricane
+                </option>
+                <option value="Drought" {{#if (isTypeSelected "Drought" disaster.type)}}selected{{/if}}>Drought</option>
+                <option value="Tsunami" {{#if (isTypeSelected "Tsunami" disaster.type)}}selected{{/if}}>Tsunami</option>
+                <option value="Other" {{#if (isTypeSelected "Other" disaster.type)}}selected{{/if}}>Other</option>
+            </select>
+            <label>Year of the Event:</label>
+            <input type="number" id="elevations" name="year" placeholder="..." value="{{disaster.year}}">
+            <label>Location:</label>
+            <input type="text" id="location" name="location" placeholder="..." value="{{disaster.location}}">
+            <label>Image:</label>
+            <input type="text" id="image" name="image" placeholder="http://..." value="{{disaster.image}}">
+            <label>Description:</label>
+            <textarea id="description" name="description" placeholder="...">value="{{disaster.description}}"</textarea>
+            <input type="submit" id="btn" value="Submit"></input>
+        </form>
+    </div>
+</section>
